@@ -6,7 +6,10 @@ Student ID: 25M38090
 
 To run the final report, execute:
 ```bash
-nvcc -O3 -std=c++17 -arch=sm_90 -Xptxas=-v 13_tensorcore_autotune_wmma_dyn.cu -lcublas -o tc_dyn
+nvcc -O3 -std=c++17 -arch=sm_90 -Xptxas=-v Final_Report.cu -lcublas -o fr_opt
+```
+```bash
+./fr_opt
 ```
 
 This code automatically tests different configurations and selects the optimal one.
